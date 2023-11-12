@@ -1,0 +1,78 @@
+/* Reset some default styles and apply a background color to the body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    background-image: linear-gradient(180deg, #000, rgb(31, 51, 31)); /* Green gradient */
+}
+
+/* Style the header */
+header {
+    background-color: rgb(28, 28, 30); /* Set the background color to black */
+    background-image: linear-gradient(360deg, #000, rgb(22, 40, 22)); /* Green gradient */
+    text-align: center; /* Center the image horizontally */
+    padding: 10px 0; /* Add some padding for spacing */
+}
+
+header img {
+    max-width: 100%; /* Make the image responsive and take full width */
+    height: 180px; /* Set the height to 180px */
+    border-radius: 50%; /* Make the image circular */
+}
+
+
+/* Style the band member cards */
+.band-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to the next row */
+}
+
+.band-member-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+    flex: 1; /* Each card takes equal width within the row */
+}
+
+.band-member-card img {
+    border-radius: 50%; /* Make the image circular */
+    max-width: 100%;
+}
+
+/* Style the rehearsals section */
+.rehearsals {
+    background-color: white; /* Set the background color to white */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add padding for spacing */
+    margin: 20px auto; /* Center the section horizontally */
+    max-width: 600px; /* Set a maximum width for the section */
+}
+
+.rehearsals h2 {
+    /* Add any styles you want for the heading */
+}
+
+.rehearsals ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.rehearsals li {
+    margin: 10px 0; /* Add spacing between rehearsal items */
+}
+
+
+/* Add a media query for responsiveness */
+@media (max-width: 768px) {
+    .band-members {
+        flex-direction: column; /* Stack cards in a single column on smaller screens */
+        align-items: center;
+    }
+}
